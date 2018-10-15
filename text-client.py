@@ -1,35 +1,17 @@
 # -*- coding:utf-8 -*-
 # @Author :songtao
 
-import itchat
-from itchat.content import *
+# import itchat
+import requests
 
+def test():
+    url = 'http://127.0.0.1:8003/api/room'
 
-def send_msg():
-    itchat.auto_login(hotReload=True)
+    res = requests.post(url, {'msg':'测试， 忽略', 'username': '主动基金开发python组'})
 
-    # 发送给群
-    room = itchat.search_chatrooms('主动基金开发python组')
-
-    # 发送给朋友
-    # friend = itchat.search_friends('chengshen')
-    print(room)
-    username = room[0]['UserName']
-    itchat.send('hello. 我是机器人', toUserName=username)
-
-
-# 接收信息
-@itchat.msg_register([PICTURE, TEXT])
-def simple_reply(msg):
-    if msg['Type'] == TEXT:
-        print(msg)
-    else:
-        pass
+    return res.text
 
 
 if __name__ == '__main__':
-    send_msg()
-
-    # itchat.auto_login(hotReload=True)
-    # itchat.send('Hello filehelper', toUserName='filehelper')
-    # itchat.run()
+    rep = test()
+    print(rep)
