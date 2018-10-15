@@ -29,6 +29,7 @@ def simple_reply(msg):
 
 if __name__ == '__main__':
     send_msg()
+
     # itchat.auto_login(hotReload=True)
     # itchat.send('Hello filehelper', toUserName='filehelper')
     # itchat.run()
