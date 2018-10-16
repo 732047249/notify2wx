@@ -46,4 +46,3 @@ redis_options = {
 }
 
 log_level = 'info'
-log_file = os.path.join(os.path.dirname(__file__), 'logs/log')
