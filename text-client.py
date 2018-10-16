@@ -5,7 +5,7 @@
 import requests
 
 def test():
-    url = 'http://127.0.0.1:8003/api/room'
+    url = 'http://127.0.0.1:8006/api/room'
 
     res = requests.post(url, {'msg':'测试， 忽略', 'username': '主动基金开发python组'})
 
