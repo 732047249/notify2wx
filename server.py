@@ -6,8 +6,8 @@ import tornado.web
 import tornado.ioloop
 import tornado.options
 import tornado.httpserver
-import pymysql
-import redis
+# import pymysql
+# import redis
 
 from config import *
 from tornado.options import options, define

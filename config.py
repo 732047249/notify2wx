@@ -3,7 +3,7 @@
 # @Author  :songtao
 
 import os
-import pymysql.cursors
+# import pymysql.cursors
 
 BASEPATH = os.path.dirname(__file__)
 
@@ -28,21 +28,21 @@ settings = {
 #     'cursorclass': pymysql.cursors.DictCursor
 # }
 
-mysql_options = {
-    'host':'54.95.38.134',
-    'database':'bitup_sys',
-    'user':'bitup',
-    'password':'Up=8u5e3W4Rjhfy8U4',
-    'charset':'utf8',
-    'port': 4423,
-    'cursorclass': pymysql.cursors.DictCursor
-}
-
-#redis配置
-redis_options = {
-    'host':'172.20.10.11',
-    'port':6379,
-    'socket_timeout':10
-}
+# mysql_options = {
+#     'host':'54.95.38.134',
+#     'database':'bitup_sys',
+#     'user':'bitup',
+#     'password':'Up=8u5e3W4Rjhfy8U4',
+#     'charset':'utf8',
+#     'port': 4423,
+#     'cursorclass': pymysql.cursors.DictCursor
+# }
+#
+# #redis配置
+# redis_options = {
+#     'host':'172.20.10.11',
+#     'port':6379,
+#     'socket_timeout':10
+# }
 
 log_level = 'info'
